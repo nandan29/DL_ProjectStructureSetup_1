@@ -68,3 +68,12 @@ source activate ./env  , will activate the env in the current source and will de
 
 **** echo is like a print statement in shell
 ***** bash init_setup.sh  , run this command in terminal and then env will be created with all requirements installed...
+
+8.src/deepClassifier/utils/common.py - created, so that it contains all the utility functions.
+
+****select the python interpreter from bottom as new env is created(3.8 reommended)
+
+
+9.In src/deepClassifier/__init__.py file create logging , (der is no need to create a seperate file for logging information
+ as we did in Avnish case)
+
