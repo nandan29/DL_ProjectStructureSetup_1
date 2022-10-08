@@ -54,3 +54,14 @@ v)pytest - uses for unit testing and integration testing.
 
 4.pyproject.toml - used to indicate what is our build system(version of setup tools ) , pytest isa testing tool and should 
 look for which folder for test cases , location of all files where mypy should look for errors , if there are any missing imports just ignore dem...
+
+5.list down all the requirements in requirements.txt and requirements_dev.txt file...
+
+**** unit testing - test of function or class
+**** integration testing - when testing two components together
+**** -e . -> to install custom package locally like here deepCNN_classifier 
+**** echo is like a print statement in shell
+
+6.tox.ini file - Github Actions (mainly github will look into it) , run series of commands as part of validation for all the test environments which will be created.
+
+7.
