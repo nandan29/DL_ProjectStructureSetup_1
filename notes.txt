@@ -60,8 +60,11 @@ look for which folder for test cases , location of all files where mypy should l
 **** unit testing - test of function or class
 **** integration testing - when testing two components together
 **** -e . -> to install custom package locally like here deepCNN_classifier 
-**** echo is like a print statement in shell
 
 6.tox.ini file - Github Actions (mainly github will look into it) , run series of commands as part of validation for all the test environments which will be created.
 
-7.
+7. init_setup.sh - creates env and installs all requirements in one go , no need to write in terminal.
+source activate ./env  , will activate the env in the current source and will delete the env , once the project is deleted.
+
+**** echo is like a print statement in shell
+***** bash init_setup.sh  , run this command in terminal and then env will be created with all requirements installed...
