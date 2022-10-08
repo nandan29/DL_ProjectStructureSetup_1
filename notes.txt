@@ -40,3 +40,17 @@ some sort of packages.
 11.research/trials.ipynb -  to create jupyter notebooks
 
 ###python template.py , run tis command to create project structure template
+
+2. setup.py file - setting up the basic information about the project or package like author name , project description , 
+package location etc etc..
+
+3.setup.cfg - conatins metadata information abt the project like license information , programming language on which my package will be 
+compatible , package created should be OS independent  ,3rd party library , packages for testing
+i) black - checks weather python coding standard is followed or not
+ii) tox - helps in testing the application locally and creates different working environment
+iii)flake - checks for other things like extra spaces , statement length etc etc
+iv)mypy - checks for typing error or spelling mistake
+v)pytest - uses for unit testing and integration testing.
+
+4.pyproject.toml - used to indicate what is our build system(version of setup tools ) , pytest isa testing tool and should 
+look for which folder for test cases , location of all files where mypy should look for errors , if there are any missing imports just ignore dem...
