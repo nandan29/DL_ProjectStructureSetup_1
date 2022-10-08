@@ -67,13 +67,24 @@ look for which folder for test cases , location of all files where mypy should l
 source activate ./env  , will activate the env in the current source and will delete the env , once the project is deleted.
 
 **** echo is like a print statement in shell
-***** bash init_setup.sh  , run this command in terminal and then env will be created with all requirements installed...
+***** bash init_setup.sh  , run this command in terminal and then NEW ENV will be created with all requirements installed...
 
 8.src/deepClassifier/utils/common.py - created, so that it contains all the utility functions.
 
-****select the python interpreter from bottom as new env is created(3.8 reommended)
+****select the python interpreter (after activating newly created env - conda activate ./env) from bottom as new env is 
+created(3.8 reommended , see below bottom right u will find it)
 
 
 9.In src/deepClassifier/__init__.py file create logging , (der is no need to create a seperate file for logging information
  as we did in Avnish case)
+
+
+ ########
+AVOIDING DEEP IMPORTS
+
+ In order to use any of the utilities defined in common.py , no need to import the file name again and again.Just mention it here 
+in __init__.py file and directly we can use all its functionalities in other files , by just calling
+from deepClassifier.utils import *
+##########
+
 
