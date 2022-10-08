@@ -1,0 +1,42 @@
+
+1.create an empty folder (which will contain ur entire repo and 
+open it in vscode)
+2. run "git init" to initialize ur repo in terminal
+3. create a readme.md file
+4. Do commit (we can do from vs code itself , type msg and click commit [it can ask you for signin])
+5. Click on publish branch and then it will ask publish it as public or private .And then its done!!!!
+6.Now in Github itelf 
+    1) create .gitignore file - add file -> create a new file-> type .gitignore and choose a template python and add file to main branch
+    2. create LICENSE file - add file -> create a new file -> type LICENSE and choose a template and add file to main branch
+
+Now what ever changes you have done in github repo itself (like created .gitignore , LICENSE) , to pull all the changes in local
+use command - git pull origin main
+
+Now repo got created ,lets create a structure or tempalte first for entire project
+
+1.create template.py file - helps in creating initial structure of my project.Previously we are doing it manually 
+when Avnish was teaching ML project structure but now with just one file wwe can create entire project structure.No need 
+to do it manually , we just need to run this file.
+
+description of some file
+1 .gitkeep - solving problem of GIT not pushing empty folder
+ to GITHUB.Helps in keeping the project structure intact.
+2.Normally code is present inside src folder , so creating some
+folders inside src folder and __init__.py file to indicate it is 
+a package
+3.configs folder containing all our configuration files
+4.dvc.yaml - data version control file.
+5.params.yaml - which will contain all out training parameter
+at one place.
+6.init_setup.sh - helps in setting up the environment , instlling
+requirements ,creating environment everything in one go.
+7.requirements.txt - contains the list of softwares to be
+installed , basically the project requirements
+8.requirements_dev.txt - some softwares needed for developement 
+purpose only like pytest ,black flake etc etc .
+9.setup.cfg , pyproject.toml - these files are used if u r creating
+some sort of packages.
+10.tox.ini - used for testing the projects locally and creating environments.
+11.research/trials.ipynb -  to create jupyter notebooks
+
+###python template.py , run tis command to create project structure template
