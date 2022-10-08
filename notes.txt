@@ -88,3 +88,5 @@ from deepClassifier.utils import *
 ##########
 
 
+##################till here we have created the project structure base , and when ever you start any new project u can follow there
+similar pattern till here################################
