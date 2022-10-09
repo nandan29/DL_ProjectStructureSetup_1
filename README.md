@@ -10,7 +10,7 @@ workflow
 7.Update the pipeline in src folder
 8.Test run pipeline stage
 9.run tox for testing your package
-10.Update the dvc.yaml
+10.Update the dvc.yaml (for orchestration purpose same as app.py in Avnish case or same as main() from where the execution begins)
 11.run "dvc repro" for running all the stages in pipeline
 
 ![img](https://raw.githubusercontent.com/c17hawke/FSDS_NOV_deepCNNClassifier/main/docs/images/Data%20Ingestion%402x%20(1).png)
