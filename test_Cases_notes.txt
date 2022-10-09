@@ -1,0 +1,48 @@
+dry run means initial trials which is being done
+create a file called tests/test_utils.py (lets say for testing the utility)
+create a folder called data inside tests folder to keep dummy data over der on which we will do the testing
+
+pytest is a library used to perform unit testing
+
+for any testing der are 2 ways 
+1.functional approach
+2.OOPS approach (just wrap all the functins inside the class)
+
+whenever u r defining any function for testing purpose  , start the function name with test_
+whenever u r defining any class for testing purpose  , start the class name with Test_
+
+to test the test case , 2 ways
+1. click on green sign which appears(if not then in extension click on enbale pytest)
+2. pytest -v
+
+@pytest.mark.parametrize("path_to_yaml", yaml_files) - is a decorator whoch is used for passing multiple files for testing
+
+
+here its a general example , wat I have shown but we can write many more test cases 
+
+
+## format document using black
+right click - format document
+
+
+
+
+##using tox.ini it will create a testing env and will check for everything (wat ever mentioned in tox.ini like formatting ,
+test cases etc etc)
+
+**** in command line mention the commannd tox 
+
+*** if lets say after the tox created the testing env once , it will re-use it another time , but lets say u added a new requirement 
+in req_dev.txt so use the command tox --recreate (it will agin recreate the env with new added requirement)
+
+
+
+@@@@@@IMPORTANT:-
+INSIDE .github/workflows create a file called as ci.yml ,this is  mainly for github actions ( entire env will be 
+created and tested using tox inside github )
+
+
+
+
+
+
