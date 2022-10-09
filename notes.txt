@@ -93,4 +93,13 @@ similar pattern till here################################
 
 1.Define constants in  constants/__init__.py file ..
 
+@@@@now we will follow the order defined in readme.md file for file updation@@@@
+1.DATA INGESTION component
+-update config/config.yaml file
+-create deepClassifier/entity/config_entity.py for name tuple and update deepClassifier/entity/__init__.py file to avoid deep imports
+-Create deepClassifier/config/CONFIGURATION.py for configuration and update deepClassifier/config/__init__.py file to avoid deep imports
+-Create deepClassifier/components/data_ingestion.py for creating data ingestion component and update deepClassifier/component/__init__.py file to avoid deep imports
+--Create deepClassifier/components/st_01_data_ingestion.py for running the above 2 steps ...
 
+
+run the command "python src/deepClassifier/pipeline/stage_01_data_ingestion.py "
