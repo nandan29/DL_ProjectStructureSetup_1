@@ -133,5 +133,5 @@ dmypy.json
 .vscode/
 *.jpg
 *.zip
-
+.DS_Store
 
