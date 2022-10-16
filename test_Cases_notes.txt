@@ -41,6 +41,9 @@ in req_dev.txt so use the command tox --recreate (it will agin recreate the env 
 INSIDE .github/workflows create a file called as ci.yml ,this is  mainly for github actions ( entire env will be 
 created and tested using tox inside github repo )
 
+***it should be inside workflows
+****check the main branch it can be main or it can be master
+
 In github got to ur repo -> click Actions for checking the workflows
 
 

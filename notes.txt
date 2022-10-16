@@ -93,13 +93,30 @@ similar pattern till here################################
 
 1.Define constants in  constants/__init__.py file ..
 
-@@@@now we will follow the order defined in readme.md file for file updation@@@@
+@@@@now we will follow the order defined in readme.md file for file updation for each component@@@@
 1.DATA INGESTION component
 -update config/config.yaml file
 -create deepClassifier/entity/config_entity.py for name tuple and update deepClassifier/entity/__init__.py file to avoid deep imports
 -Create deepClassifier/config/CONFIGURATION.py for configuration and update deepClassifier/config/__init__.py file to avoid deep imports
 -Create deepClassifier/components/data_ingestion.py for creating data ingestion component and update deepClassifier/component/__init__.py file to avoid deep imports
---Create deepClassifier/components/st_01_data_ingestion.py for running the above 2 steps ...
+-Create deepClassifier/pipeline/st_01_data_ingestion.py for running the above 2 steps ...
 
 
 run the command "python src/deepClassifier/pipeline/stage_01_data_ingestion.py "
+
+now follow the steps in test_cases_notes.txt.
+
+component1 is completed
+
+2.BaseModelCreation
+-update config/config.yaml file
+-update params.yaml file
+-update deepClassifier/entity/config_entity.py for name tuple and update deepClassifier/entity/__init__.py file to avoid deep imports
+-update deepClassifier/config/CONFIGURATION.py for configuration .
+-create deepClassifier/components/prepare_base_model.py for creating base model component and update deepClassifier/component/__init__.py file to avoid deep imports
+-Create deepClassifier/pipeline/st_02_prepare_base_model.py for running the above 2 steps ...
+
+run the command python src/deepClassifier/pipeline/st_02_prepare_base_model.py
+
+
+
